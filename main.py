@@ -12,11 +12,6 @@ for n in range(len(reader.pages)):
     pdf_text = page.extract_text()
 
     pdf_text = pdf_text.strip()
-    pdf_text = pdf_text.replace("●", "")
-    pdf_text = pdf_text.replace("’", "'")
-    pdf_text = pdf_text.replace("ﬁ", "fi")
-    pdf_text = pdf_text.replace("ﬀ", "ff")
-    pdf_text = pdf_text.replace("ﬃ", "ffi")
     pdf_text = pdf_text.replace("\n", " ")
 
     print(pdf_text)
